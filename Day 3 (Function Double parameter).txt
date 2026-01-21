@@ -1,0 +1,12 @@
+#include<stdio.h>
+void eswar(int e,int j){
+    printf("Addition=%d\n",e+j);
+    printf("sub=%d\n",e-j);
+    printf("multi=%d\n",e*j);
+    printf("div=%d\n",e/j);
+    printf("mod=%d\n",e%j);
+}
+int main(){
+    eswar(15,5);
+    return 0;
+}
