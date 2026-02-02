@@ -5,4 +5,4 @@ int main(){
     result=sum/5;
     printf("Average of the marks=%f",result);
 }
- //new line
+//new line
