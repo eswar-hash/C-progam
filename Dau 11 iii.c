@@ -1,12 +1,10 @@
 #include <stdio.h>
-#include <stdlib.h>
-
+#include <stdlib.h>5
 struct node {
     char data;
     struct node *left;
     struct node *right;
 };
-
 struct node* create(char data) {
     struct node* temp = (struct node*)malloc(sizeof(struct node));
     temp->data = data;
@@ -14,7 +12,6 @@ struct node* create(char data) {
     temp->right = NULL;
     return temp;
 }
-
 void preorder(struct node* root) {
     if (root != NULL) {
         printf("%c", root->data);
@@ -22,7 +19,6 @@ void preorder(struct node* root) {
         preorder(root->right);
     }
 }
-
 int main() {
     struct node* root = create('*');
     root->left = create('+');
